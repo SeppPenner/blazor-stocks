@@ -17,6 +17,7 @@ namespace BlazorFinancePortfolio.Server
                     .AddCommandLine(args)
                     .Build())
                 .UseStartup<Startup>()
+                .UseSetting(WebHostDefaults.DetailedErrorsKey, "true")
                 .Build();
     }
 }
